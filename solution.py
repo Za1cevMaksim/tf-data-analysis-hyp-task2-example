@@ -9,7 +9,7 @@ chat_id = 461694118
 def solution(x: np.array, y: np.array) -> bool:
     ks_statistic, p_value = ks_2samp(x, y)
 
-    alpha = 0.03
+    alpha = 0.04
 
     if p_value < alpha:
         return True
